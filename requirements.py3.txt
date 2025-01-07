@@ -1,0 +1,7 @@
+# PepperChat Python3 Requirements
+python-dotenv
+zmq
+openai
+flask 
+numpy
+google-cloud-texttospeech
