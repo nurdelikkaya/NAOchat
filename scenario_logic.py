@@ -34,12 +34,12 @@ from google.cloud import speech
 
 os.environ["GOOGLE_APPLICATION_CREDENTIALS"] = os.getenv(
     "GOOGLE_APPLICATION_CREDENTIALS",
-    "C:/agile-fort-445710-n1-edc5a3aeedf5.json"
+    "tts_credentials"
 )
 
 os.environ["GOOGLE_STT_CREDENTIALS"] = os.getenv(
     "GOOGLE_STT_CREDENTIALS",
-    "C:\agile-fort-445710-n1-9cc918444db5.json"
+    "stt_credentials"
 )
 
 app = Flask(__name__)
@@ -48,7 +48,7 @@ tts_client = texttospeech.TextToSpeechClient()
 
 
 client = OpenAI(
-    api_key=("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"),  
+    api_key=("api_key"),  
 )
 
 session = {
