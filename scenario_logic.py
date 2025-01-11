@@ -4,7 +4,7 @@
 scenario_logic.py
 
 Python 3 Flask server that:
- - /listenUser -> receives an audio file from Pepper for STT (Hugging Face),
+ - /listenUser -> receives an audio file from Pepper for STT (Google Cloud),
    optionally calls ChatGPT for a "novel" response, then does TTS with Google
    Cloud (Turkish) and returns WAV audio as base64 + recognized text.
  - /ttsBytes -> text-to-speech for any prompt or scenario lines, returns base64 WAV
