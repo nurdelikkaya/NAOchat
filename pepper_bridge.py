@@ -26,16 +26,16 @@ from optparse import OptionParser
 from naoqi import ALBroker, ALModule, ALProxy
 
 
-ROBOT_IP = "169.254.83.248"  
-ROBOT_PORT = 9559
-NAO_PASSWORD = "qbmt8400"
-managerProxy = ALProxy("ALBehaviorManager", ROBOT_IP, 9559)
+ROBOT_IP = "robot_ip"  
+ROBOT_PORT = robot_port
+NAO_PASSWORD = "nao_password"
+managerProxy = ALProxy("ALBehaviorManager", ROBOT_IP, ROBOT_PORT)
 
-SCENARIO_SERVER_HOST = "169.254.142.69"
-SCENARIO_SERVER_PORT = 5000
+SCENARIO_SERVER_HOST = "scenario_server_hsot"
+SCENARIO_SERVER_PORT = scenario_server_port
 
-LOCAL_TEMP_DIR = "C:/pynaoqi-python2.7-2.8.7.4-win64-vs2015-20210818_210634/share/qi/wav"
-PEPPER_TEMP_DIR = "/home/nao/audio/"
+LOCAL_TEMP_DIR = "local_temp_dir"
+PEPPER_TEMP_DIR = "pepper_temp_dir"
 
 FILLER_PHRASES = [u"Düşüneyim", u"Bir saniye"]
 
